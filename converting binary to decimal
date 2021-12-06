@@ -1,0 +1,19 @@
+/*write a program to convert BINARY to DECIMAL?*/
+
+#include<iostream.h>
+using namespace std;
+{
+   int num,rem,temp,dec=0,b=1;
+   cout<<"Enter the binary number:";
+   cin>>num;
+   temp=num;
+   while(num>0)
+   {
+      rem=temp%10;
+      dec=dec+rem*b;
+      b*=2;
+      temp/=10;
+   }
+   cout<<"the decimal equivalent of"<<num<<"is"<<dec;
+   return 0;
+}   
